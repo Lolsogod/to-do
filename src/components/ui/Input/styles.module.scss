@@ -1,0 +1,14 @@
+@use 'src/styles/variables.scss' as *; 
+
+.input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: $input-background-color;
+    border: 1px solid $input-border-color;
+    color: $base-text-color;
+
+    &::placeholder {
+      color: $placeholder-color;
+    }
+  }

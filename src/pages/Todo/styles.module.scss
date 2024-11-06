@@ -1,0 +1,12 @@
+@use 'src/styles/variables.scss' as *;
+
+.container {
+    padding: 20px;
+    min-height: 100vh;
+    background-color: $base-background;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  
+  

@@ -1,0 +1,46 @@
+@use 'src/styles/variables.scss' as *;
+
+.button { 
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary {
+  color: white;
+  background-color: $base-accent-color;
+
+  &:hover {
+    background-color: $base-accent-color-hover;
+  }
+}
+
+.destructive {
+  color: white;
+  background-color: $destructive-color;
+
+  &:hover {
+    background-color: $destructive-color-hover;
+  }
+}
+
+.warning {
+  color: white;
+  background-color: $warning-color;
+
+  &:hover {
+    background-color: $warning-color-hover;
+  }
+}
+
+.info {
+  color: white;
+  background-color: $info-color;
+
+  &:hover {
+    background-color: $info-color-hover;
+  }
+}
+

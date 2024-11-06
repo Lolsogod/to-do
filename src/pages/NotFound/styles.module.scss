@@ -1,0 +1,29 @@
+@use 'src/styles/variables.scss' as *;  
+
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+  
+    h1 {
+      font-size: 128px;
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+  
+    p {
+      font-size: 24px;
+    }
+  
+    a {
+      color: $base-text-color;
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }

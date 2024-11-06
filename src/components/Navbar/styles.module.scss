@@ -1,0 +1,81 @@
+@use 'src/styles/variables.scss' as *;
+
+.navigation {
+  background-color: $nav-color;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+
+ @media (max-width: 768px) {
+    padding: 12px;
+    margin-bottom: 16px;
+  }
+}
+
+.navList {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  flex-wrap: wrap;
+
+
+  li {
+    a {
+      color: $base-text-color;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: $nav-link-color-hover;
+      }
+    }
+
+    &:last-child {
+      margin-left: auto;
+    }
+
+    .active {
+      background-color: $nav-link-color-active;
+
+      &:hover {
+        background-color: $nav-link-color-active-hover;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    
+    li {
+      width: 100%;
+      
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px 10px;
+        height: 100%;
+        background-color: $nav-color;
+      }
+      
+      &:last-child {
+        margin-left: 0;
+        grid-column: 1 / -1;
+      }
+    }
+  }
+}
+
+.logoutContainer {
+  display: flex;
+  flex-direction: column;
+align-items: stretch;
+}
